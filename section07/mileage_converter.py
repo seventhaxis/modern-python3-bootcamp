@@ -1,4 +1,4 @@
-print("How many miles did you cycle today?"")
+print("How many miles did you cycle today?")
 
 miles = input()
 kms = float(miles) * 1.60934

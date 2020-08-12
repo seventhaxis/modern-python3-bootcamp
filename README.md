@@ -5,6 +5,7 @@
 #### Table of Contents
 1. [Operators](#operators)
 2. [Variables & Data Types](#variables--data-types)
+3. [Booleans & Conditional Logic](#booleans--conditional-logic)
 1. [Built-In Functions](#built-in-functions)
 
 - [Links & Acknowledgements](#links--acknowledgements)
@@ -12,7 +13,7 @@
 ---
 
 ## Operators
-- the divide operator(i.e. `/`) **always** returns a `Float`
+- the divide operator(`/`) **always** returns a `Float`
     - use the integer division operator (`//`) instead to discard any fractional component and return and `Int` instead, rounding down
 - the exponentiation operator (`**`) raises a number to a given power
 - the modulo operator (`%`) returns the **remainder** of the equation
@@ -31,16 +32,36 @@
 - string interpolation utilizes **F-Strings** (introduced in Python 3.6)
 ```
 x = 42
-print(f'The answer to the question is {x}!')   # The answer to the question is 42!
+print(f"The answer to the question is {x}!")   # The answer to the question is 42!
 ```
 - strings represent lists of characters which can be accessed by calling its index within the string
-    - lists (arrays) start at `0` within Python
+    - lists (arrays) start at zero within Python
     - negative indices can be used and start at the _end_ of the list
 
-## Built-In Functions
-See the full list within the [documentation](https://docs.python.org/3/library/functions.html).
+## Booleans & Conditional Logic
+- the `elif` keyword allows you to check an alternative expression
+- colons are required at the end of each expression
+```
+if expressionA:
+    print("Congratulations!"")
+elif expressionB:
+    print("Nice job.")
+else:
+    print("Maybe next time?"")
+```
+- certain objects have an inherent **truth value** (aka. _truthiness_) associated with the value
+    - *truthiness* refers to an expression that resolves as `True`
+    - the following constants and objects resolve as `False`:
+        - empty sequences and collections (e.g. `""`, `()`, `[]`)
+        - zero for any numeric type (e.g. `0`, `0.0`)
+        - `False`, `None`
+- comparison operator `is` refers to whether an object shares the same place with another **in memory**
 
+## Common Built-In Functions
+See the full list within the [documentation](https://docs.python.org/3/library/functions.html).<br>
 **Important:** Take care not to override these defined functions.
+
+- `input()` - prompts the user with given message and returns the user response
 
 
 ---
