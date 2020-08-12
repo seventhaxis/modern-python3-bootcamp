@@ -4,14 +4,44 @@
 
 #### Table of Contents
 1. [Operators](#operators)
+2. [Variables & Data Types](#variables--data-types)
+1. [Built-In Functions](#built-in-functions)
 
 - [Links & Acknowledgements](#links--acknowledgements)
+
+---
 
 ## Operators
 - the divide operator(i.e. `/`) **always** returns a `Float`
     - use the integer division operator (`//`) instead to discard any fractional component and return and `Int` instead, rounding down
 - the exponentiation operator (`**`) raises a number to a given power
 - the modulo operator (`%`) returns the **remainder** of the equation
+
+## Variables & Data Types
+- most variables are defined with lowercase `snake_case` names
+    - constants would be `ALL_CAPS`
+    - objects (classes) use `PascalCase`
+    - variables beginning and ending with two (2) underscores (aka. **dunder**) are considered private and should be ignored
+        - `__no_touchy__`
+- variables can change stored data types (i.e. **Dynamic Typing**)
+- boolean values must begin with capital **T** or **F**
+- includes a special type defined as `None` (i.e. `nil`, `NULL`)
+- strings can be defined with either single or double quotes
+    - escape sequences defined within [**documentation**](https://docs.python.org/3/reference/lexical_analysis.html)
+- string interpolation utilizes **F-Strings** (introduced in Python 3.6)
+```
+x = 42
+print(f'The answer to the question is {x}!')   # The answer to the question is 42!
+```
+- strings represent lists of characters which can be accessed by calling its index within the string
+    - lists (arrays) start at `0` within Python
+    - negative indices can be used and start at the _end_ of the list
+
+## Built-In Functions
+See the full list within the [documentation](https://docs.python.org/3/library/functions.html).
+
+**Important:** Take care not to override these defined functions.
+
 
 ---
 
