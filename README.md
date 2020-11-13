@@ -30,7 +30,7 @@
 - strings can be defined with either single or double quotes
     - escape sequences defined within [**documentation**](https://docs.python.org/3/reference/lexical_analysis.html)
 - string interpolation utilizes **F-Strings** (introduced in Python 3.6)
-```
+```python
 x = 42
 print(f"The answer to the question is {x}!")   # The answer to the question is 42!
 ```
@@ -41,13 +41,13 @@ print(f"The answer to the question is {x}!")   # The answer to the question is 4
 ## Booleans & Conditional Logic
 - the `elif` keyword allows you to check an alternative expression
 - colons are required at the end of each expression
-```
+```python
 if expressionA:
-    print("Congratulations!"")
+    print("Congratulations!")
 elif expressionB:
     print("Nice job.")
 else:
-    print("Maybe next time?"")
+    print("Maybe next time?")
 ```
 - certain objects have an inherent **truth value** (aka. _truthiness_) associated with the value
     - *truthiness* refers to an expression that resolves as `True`
